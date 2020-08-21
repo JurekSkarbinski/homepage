@@ -1,0 +1,19 @@
+.header {
+ background-color: #ddcab2;
+ padding: 4px;
+ padding-bottom: 10px;
+}.header__naglowek {
+ 
+ margin-left: 10px;
+}
+
+.header__przycisk {
+ margin-left: 10px;
+}
+.header__naglowek2 {
+ margin-left: 10px;
+ margin-right: 10px;
+ background-color: #d7ccc8;
+ padding: 6px;
+ box-shadow: 2px 3px black; 
+}

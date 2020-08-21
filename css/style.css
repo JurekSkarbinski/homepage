@@ -1,0 +1,62 @@
+html {
+ box-sizing: border-box;
+}
+*, ::after, ::before {
+ box-sizing: inherit;
+}
+/* powyższe to alternatywny box model */
+
+.body {
+ font-family: 'Lato', sans-serif;
+ line-height: 1,5;
+}
+
+.tableCell {
+ border: 1px solid black;
+ padding: 15px; 
+ text-align: center;
+}
+.table {
+ border-collapse: collapse;
+ width: 100%;
+}
+.tableHeader {
+ background-color: crimson;
+ color: white;
+ font-weight: normal;
+}
+.tableRow:nth-child(even) {
+ background: lightgray ;
+
+} 
+.tableRow:hover {
+ background: lightslategrey;
+}
+.container {
+ overflow-x: auto;
+}
+
+.link {         
+ background-color: crimson;
+ color: white;
+ margin-right: 10px;
+ text-decoration: none;
+ padding: 5px 10px;
+
+}
+
+.link:focus {
+ outline: 2px solid black;
+}
+.link:hover {
+ background-color: green;
+
+ outline: none;
+}
+.link:active {
+ background-color: darkorange;
+}
+.naglowek3 {
+ color: red;
+ text-align: center;
+}

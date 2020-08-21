@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja pierwsza strona</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"
+    integrity="undefined" crossorigin="anonymous" />
+  <!-- Powyższy link normalizuje pewne css-y w różnych przeglądarkach -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/form1.css" rel="stylesheet">
+
+  <script defer src="js/script.js">
+  </script>
+</head>
+
+<body class="body">
+
+  <header class="header">
+    <h1 class="header__naglowek">Nagłówek najważniejszy</h1>
+    <button class="header__przycisk">
+      Usuń nagłówek!
+    </button>
+    <h2 class="header__naglowek2">Mój piesek</h2>
+    <img style="margin-left: 10px; margin-bottom: 10px;" title="Keja - mojs suczka" src="images/pies.jpg"
+      alt="Keja, piesek Agnieszki">
+    <!-- atrybut title to dymek ukazujący się po najechaniu myszką na obrazek, obiekt lub jakiś tekst -->
+    <br>
+
+    <a href="#ulubione-książki">do moich ulubionych książek</a>
+  </header>
+
+  <form class="form1">
+    <fieldset class="form1__fieldset">
+      <legend class="form1__legend">Dane osobowe</legend>
+      <p>
+        <label>
+          <span class="form1__labelText">Imię</span>
+          <input class="form1__field" name="firstName">
+        </label>
+      </p>
+      <p>
+        <label>
+          <span class="form1__labelText">Nazwisko</span>
+          <input class="form1__field" name="lastName">
+        </label>
+      </p>
+      <p>
+        <label>
+          <span class="form1__labelText">Kolor Twoich oczu</span>
+          <select class="form1__field" name="eyesColor">
+            <option>zielone</option>
+            <option>niebieskie</option>
+            <option>piwne</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>
+          <span class="form1__labelText">Opis:</span>
+          <textarea class="form1__field form1__field--textarea" name="description" rows="5"
+            placeholder="wpisz swoje uwagi"></textarea>
+        </label>
+      </p>
+
+      <p>
+        <label>
+          <span class="form1__labelText">Protokół (http lub https):</span>
+
+          <input class="form1__field" name="protocol" pattern="https?">
+        </label>
+      </p>
+      <p>
+        <label>
+          <span class="form1__labelText">Kod pocztowy:</span>
+
+          <input class="form1__field" type="text" name="country_code" pattern="[0-9]{2}-[0-9]{3}">
+        </label>
+      </p>
+      <p>
+        <span class="form1__labelText"></span>
+        <button class="form1__button">Wyślij!</button>
+      </p>
+    </fieldset>
+  </form>
+
+  <form class="js-form">
+    <fieldset class="form1__fieldset">
+      <legend class="form1__legend">Obliczanie BMI</legend>
+      <p>
+        <label>
+          <span class="form1__labelText">
+            Twój wzrost:</span>
+          <input class="form1__field form1__field--wzrost " required type="number">
+        </label>
+      </p>
+      <p>
+        <label>
+          <span class="form1__labelText">
+            Twoja waga:</span>
+          <input class="form1__field form1__field--waga" required type="number">
+        </label>
+      </p>
+      <p>
+        <button>Policz BMI!</button>
+      </p>
+      <p>Twoje BMI wynosi: <strong class="js-bmi"></strong></p>
+
+    </fieldset>
+  </form>
+
+      <p>
+        <h3 class="naglowek3">Nagłówek testowy z nauki GIt-a</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nesciunt vitae natus quae a omnis, nulla sunt, eaque, officiis harum adipisci consequuntur rem cumque praesentium qui impedit sint. Qui, minima.
+      </p>
+  <div class="container">
+    <table class="table" id="ulubione-książki">
+      <caption>
+        <h3>Moje ulubione książki</h3>
+      </caption>
+
+      <tr class="tableRow">
+        <th class="tableCell tableHeader" scope="col">Liczba porządkowa</th>
+        <th class="tableCell tableHeader" scope="col">Tytuł</th>
+        <th class="tableCell tableHeader" scope="col">Autor</th>
+        <th class="tableCell tableHeader" scope="col">Główny bohater</th>
+        <th class="tableCell tableHeader">O czym?</th>
+      </tr>
+      <tr class="tableRow">
+        <th class="tableCell tableHeader" scope="row">1</th>
+        <td class="tableCell">Klub Pickiwcka</td>
+        <td class="tableCell">Charles Dickens</td>
+        <td class="tableCell">Pan Pickwick</td>
+        <td class="tableCell">O przygodach angielskich dżentelmenów</td>
+
+      </tr>
+      <tr class="tableRow">
+        <th class="tableCell tableHeader" scope="row">2 </th>
+        <td class="tableCell">Przygody Hucka</td>
+        <td class="tableCell">Mark Twain</td>
+        <td class="tableCell">nastoletni Huckelberry Finn</td>
+        <td class="tableCell">O przygodach chłopca na Missisipi</td>
+
+      </tr>
+      <tr class="tableRow">
+        <th class="tableCell tableHeader" scope="row">3</th>
+        <td class="tableCell">Przygody Tomka Sawyera</td>
+        <td class="tableCell">Mark Twain</td>
+        <td class="tableCell">nastoletni Tomek</td>
+        <td class="tableCell">O wybrykach szkolnych i nie tylko</td>
+
+      </tr>
+
+      <tr class="tableRow">
+        <th class="tableCell tableHeader" scope="row">4</th>
+        <td class="tableCell">Ulisses</td>
+        <td class="tableCell">James Joyce</td>
+        <td class="tableCell">Pan Leopold Bloom z Dublina</td>
+        <td class="tableCell">Jeden dzień z życia Leopolda Blooma</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <h4>Jesli chcesz sprawdzić co słychać w wiadomościach ze świata to kliknij w <a rel="noreferrer noopener"
+      target="_blank" title="Informacje serwisu onet" href="https://www.onet.pl/">Onet (otwiera się w nowej karcie).</a>
+  </h4>
+  <!--do atrybutu target  warto dodać atrybut rel="noreferrer noopener" aby uniknąć pewnych problemów związanych z ładowaniem stron-->
+
+  <a href="images/jerzy.jpg" download="Jerzy.jpg">Moje zdjęcie</a>
+  <p>Pisz do mnie na: <a href="mailto:jerzysk.onet.eu">jerzysk@onet.eu</a> lub dzwoń na: <a href="tel:+48.794(575)599">
+      794675599</a></p>
+
+  <a target="blank" class="link" href="https://www.kurnik.pl/szachy/">Kurnik</a>
+  <a target="blank" class="link" href="https://www.google.pl/maps"> Google maps</a>
+
+
+</body>
+
+</html>
